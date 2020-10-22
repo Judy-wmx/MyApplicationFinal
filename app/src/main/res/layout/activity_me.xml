@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.acer.myapplication.MeActivity">
+
+    <TextView
+        android:id="@+id/find_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/name_me_title"
+        android:textSize="18sp"
+        android:textColor="@color/colortitle" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#dcdcdc">
+
+        //用户信息
+        <LinearLayout
+            android:id="@+id/user_inf"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/pic1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/me_dingding"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        //情绪统计
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/qingxutongji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/me_qingxutongji" />
+
+        </LinearLayout>
+
+        //安全隐私
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/anquanxinsi"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/me_anquanyinsi" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/underline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:gravity="center_vertical"
+            android:background="#dcdcdc"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/guanyuchengxu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/me_guanyuchengxu" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/bottomGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <Button
+                android:onClick="btn3Click"
+                android:id="@+id/btn_Emotion3"
+                style="@style/rg_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/emotion"
+                android:textSize="20dp"/>
+            <Button
+                android:onClick="btn3Click"
+                android:id="@+id/btn_Find3"
+                style="@style/rg_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/find"
+                android:textSize="20dp"/>
+            <Button
+                android:onClick="btn3Click"
+                android:id="@+id/btn_Me3"
+                style="@style/rg_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/me"
+                android:textSize="20dp"/>
+        </RadioGroup>
+</LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

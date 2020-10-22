@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.acer.myapplication.EmotionActivity">
+
+
+
+    <TextView
+        android:id="@+id/name_emotion_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/name_emotion_title"
+        android:textSize="18sp"
+        android:textColor="@color/colortitle" />
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dcdcdc">
+
+
+
+        <ListView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none"
+            android:dividerHeight="5dp"
+            android:background="#fdfdfd"
+            android:id="@+id/emotion_ListView"></ListView>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="end">
+
+            <Button
+                android:onClick="doclick"
+                android:id="@+id/shanchu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"/>
+
+            <Button
+                android:onClick="doclick"
+                android:id="@+id/quxiao"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:text="取消"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_bt"
+            android:onClick="onClick"
+            android:focusable="false"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/add_btn"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="120dp"
+            android:layout_width="80dp"/>
+
+        <RadioGroup
+            android:id="@+id/bottomGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">-->
+            <Button
+                android:onClick="btnClick"
+                android:id="@+id/btn_Emotion"
+                style="@style/rg_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/emotion"
+                android:textSize="20dp"/>
+            <Button
+                android:onClick="btnClick"
+                android:id="@+id/btn_Find"
+                style="@style/rg_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/find"
+                android:textSize="20dp"/>
+            <Button
+                android:onClick="btnClick"
+                android:id="@+id/btn_Me"
+                style="@style/rg_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/me"
+                android:textSize="20dp"/>
+        </RadioGroup>
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
