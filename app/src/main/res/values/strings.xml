@@ -10,7 +10,7 @@
     <string name="name_me_title">我</string>
     <string name="name_emotion_title">便签</string>
     <string name="aditor_save_btn">保存</string>
-    <string name="aditor_delete_btn">取消</string>
+    <string name="aditor_delete_btn">取消保存</string>
     <string name="aditor_textV">请选择你现在的心情：</string>
     <string name="aditor_btn_happy">快乐</string>
     <string name="aditor_btn_sad">伤心</string>
