@@ -23,7 +23,7 @@ public class RWFile {
         }
         return null;
     }
-    //写txt文件
+    //写txt文件11
     public static void writeFile(String filename,String content) {
         File file = new File(filename);
         FileOutputStream outputStream;
