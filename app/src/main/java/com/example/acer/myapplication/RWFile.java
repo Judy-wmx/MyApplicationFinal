@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class RWFile {
-    //读txt文件
+    //读txt文件111
     public static String readFile(File file) {
         try {
             FileInputStream inputStream = new FileInputStream(file);
