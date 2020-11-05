@@ -5,10 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * Created by acer on 2018/6/8.
- */
-
 public class RWFile {
     //读txt文件
     public static String readFile(File file) {

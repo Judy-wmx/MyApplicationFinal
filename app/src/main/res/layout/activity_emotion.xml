@@ -4,10 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="@drawable/fengmian"
     tools:context="com.example.acer.myapplication.EmotionActivity">
-
-
 
     <TextView
         android:id="@+id/name_emotion_title"
@@ -19,19 +17,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="15dp"
         android:text="@string/name_emotion_title"
-        android:textSize="18sp"
-        android:textColor="@color/colortitle" />
-
-
-
+        android:textSize="20dp"
+        android:textColor="@color/firebrick"/>
 
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dcdcdc">
-
-
+        android:background="@drawable/fengmian">
 
         <ListView
             android:layout_height="fill_parent"
@@ -41,7 +34,6 @@
             android:layout_marginRight="10dp"
             android:scrollbars="none"
             android:dividerHeight="5dp"
-            android:background="#fdfdfd"
             android:id="@+id/emotion_ListView"></ListView>
 
         <LinearLayout
@@ -66,7 +58,17 @@
                 android:layout_gravity="right"
                 android:layout_height="wrap_content"
                 android:text="取消"/>
-
+            <Button
+                android:id="@+id/btn_del1"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:text="删除1"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_blue_bright"
+                android:background="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
 
         </LinearLayout>
 
@@ -79,13 +81,15 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="50dp"
             android:layout_height="120dp"
-            android:layout_width="80dp"/>
+            android:layout_width="80dp"
+            android:textColor="@color/rosybrown"/>
 
         <RadioGroup
             android:id="@+id/bottomGroup"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="bottom"
+            android:background="@color/lightsteelblue"
             android:layout_gravity="bottom"
             android:orientation="horizontal">-->
             <Button
@@ -95,7 +99,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/emotion"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:background="@color/lightsteelblue"
+                />
             <Button
                 android:onClick="btnClick"
                 android:id="@+id/btn_Find"
@@ -103,15 +109,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/find"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:background="@color/lightsteelblue"
+                />
             <Button
                 android:onClick="btnClick"
                 android:id="@+id/btn_Me"
                 style="@style/rg_btn_style"
+                android:background="@color/lightsteelblue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/me"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                />
         </RadioGroup>
 
     </FrameLayout>

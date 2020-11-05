@@ -10,11 +10,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.sqlite.login.R;
+
 import java.util.List;
 
-/**
- * Created by acer on 2018/6/7.
- */
 
 public class NewsAdapter extends BaseAdapter {
     private List<News> newsList;
@@ -43,8 +42,7 @@ public class NewsAdapter extends BaseAdapter {
 
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.news_item,
-                    null);
+            view = LayoutInflater.from(mContext).inflate(R.layout.news_item, null);
             viewHolder = new ViewHolder();
             viewHolder.newsTitle = (TextView) view.findViewById(R.id.news_title);
             viewHolder.newsDesc = (TextView) view.findViewById(R.id.news_desc);

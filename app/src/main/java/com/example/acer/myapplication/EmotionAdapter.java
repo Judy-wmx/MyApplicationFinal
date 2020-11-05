@@ -10,12 +10,11 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
+import com.example.sqlite.login.R;
+
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by acer on 2018/6/8.
- */
 
 public class EmotionAdapter extends BaseAdapter {
 

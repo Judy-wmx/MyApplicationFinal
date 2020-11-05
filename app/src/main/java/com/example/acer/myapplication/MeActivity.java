@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.sqlite.login.R;
+
 public class MeActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,17 @@ public class MeActivity extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.anquanxinsi: {
                 Intent intent = new Intent(this, AnquanyuyinsiActivity.class);
+                startActivityForResult(intent, 0);
+                break;
+            }//anquanxinsi
+            //qingxutongji
+            case R.id.qingxutongji: {
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivityForResult(intent, 0);
+                break;
+            }
+            case R.id.guanyuchengxu: {
+                Intent intent = new Intent(this, AppActivity.class);
                 startActivityForResult(intent, 0);
                 break;
             }
@@ -33,7 +46,7 @@ public class MeActivity extends AppCompatActivity {
             }
 
             case R.id.btn_Find3:{
-                Intent intent = new Intent(this, FindActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivityForResult(intent, 0);
                 break;
             }

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightsteelblue"
     tools:context="com.example.acer.myapplication.MeActivity">
 
     <TextView
@@ -16,10 +17,9 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="15dp"
         android:text="@string/name_me_title"
-        android:textSize="18sp"
+        android:textSize="20dp"
+
         android:textColor="@color/colortitle" />
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,6 @@
         android:orientation="vertical"
         android:background="#dcdcdc">
 
-        //用户信息
         <LinearLayout
             android:id="@+id/user_inf"
             android:layout_width="match_parent"
@@ -42,7 +41,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:src="@drawable/pic1"
+                android:src="@drawable/haizeiwang"
                 />
 
             <TextView
@@ -53,7 +52,6 @@
                 android:textSize="20sp"/>
 
         </LinearLayout>
-        //情绪统计
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -62,6 +60,7 @@
 
             <TextView
                 android:id="@+id/qingxutongji"
+                android:onClick="onClick"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="18dp"
@@ -71,7 +70,6 @@
 
         </LinearLayout>
 
-        //安全隐私
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -105,14 +103,15 @@
 
             <TextView
                 android:id="@+id/guanyuchengxu"
+                android:onClick="onClick"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="18dp"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="15dp"
                 android:text="@string/me_guanyuchengxu" />
-
         </LinearLayout>
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -121,6 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="bottom"
+            android:background="@color/lightsteelblue"
             android:gravity="bottom"
             android:orientation="horizontal">
             <Button
@@ -130,6 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/emotion"
+                android:background="@color/lightsteelblue"
                 android:textSize="20dp"/>
             <Button
                 android:onClick="btn3Click"
@@ -138,6 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/find"
+                android:background="@color/lightsteelblue"
                 android:textSize="20dp"/>
             <Button
                 android:onClick="btn3Click"
@@ -146,8 +148,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/me"
+                android:background="@color/lightsteelblue"
                 android:textSize="20dp"/>
         </RadioGroup>
+
 </LinearLayout>
 
     </LinearLayout>

@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.sqlite.login.R;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -74,7 +76,8 @@ public class FindActivity extends AppCompatActivity {
 
                 Document doc = null;
                 try {
-                    doc = Jsoup.connect("http://www.ledu365.com/xinling/").get();
+                    doc = Jsoup.connect("http://www.baidu.com/").get();
+                    //http://www.ledu365.com/xinling/
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -84,7 +87,8 @@ public class FindActivity extends AppCompatActivity {
                 Elements e2 = e1.select("li");
                 for (int j = 0; j < e2.size(); j++) {
                     title = e2.get(j).select("a.title").text();
-                    uri = "http://www.ledu365.com" + e2.get(j).select("a.title").attr("href");
+                    uri = "https://cn.bing.com/?scope=web&FORM=ANNTH1" + e2.get(j).select("a.title").attr("href");
+                    //http://www.ledu365.com
                     desc = e2.get(j).select("p").text();
                     Elements e3 = e2.get(j).select("a.preview");
                     imageUrl = e3.select("img").attr("src");//获取图片链接

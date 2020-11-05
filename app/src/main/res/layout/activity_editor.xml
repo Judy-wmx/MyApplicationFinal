@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/jiqimao"
     tools:context="com.example.acer.myapplication.EditorActivity">
 
     <ScrollView
-        android:layout_height="420dp"
+        android:layout_height="560dp"
         android:layout_width="match_parent"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
@@ -16,11 +17,11 @@
 
 
         <EditText
-            android:textSize="26sp"
+            android:textSize="20sp"
             android:id="@+id/EditText"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:hint="此时你在想什么？" />
+            android:hint="好记性不如烂笔头？" />
     </ScrollView>
 
     <LinearLayout
@@ -32,7 +33,7 @@
             android:id="@+id/save_bt"
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="75dp"
             android:focusable="true"
             android:text="@string/aditor_save_btn" />
 
@@ -40,7 +41,7 @@
             android:id="@+id/del_bt"
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="75dp"
             android:layout_marginRight="25dp"
             android:text="@string/aditor_delete_btn" />
     </LinearLayout>

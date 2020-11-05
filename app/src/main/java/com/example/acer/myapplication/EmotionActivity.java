@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.sqlite.login.R;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -159,7 +161,6 @@ public class EmotionActivity extends AppCompatActivity implements View.OnClickLi
     //按钮事件
     public void doclick(View view) {
         switch (view.getId()) {
-
             case R.id.shanchu: {
                 for (int i = 0; i < data_list.size(); i++) {
                     if ((Boolean) data_list.get(i).get("isChecked")) {
@@ -208,7 +209,7 @@ public class EmotionActivity extends AppCompatActivity implements View.OnClickLi
             }
 
             case R.id.btn_Find:{
-                Intent intent = new Intent(this, FindActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivityForResult(intent, 0);
                 break;
             }

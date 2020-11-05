@@ -2,9 +2,6 @@ package com.example.acer.myapplication;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by acer on 2018/6/7.
- */
 
 public class News {
 

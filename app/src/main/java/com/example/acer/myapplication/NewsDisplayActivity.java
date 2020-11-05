@@ -1,9 +1,11 @@
 package com.example.acer.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.sqlite.login.R;
 
 public class NewsDisplayActivity extends AppCompatActivity {
 
